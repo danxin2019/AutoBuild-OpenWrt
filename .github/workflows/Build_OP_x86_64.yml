@@ -74,7 +74,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adguardhome
+        git clone https://github.com/Lienol/openwrt-OpenAppFilter.git package/OpenAppFilter
              
     - name: Configuration Customization - Build_x86_64
       env:
