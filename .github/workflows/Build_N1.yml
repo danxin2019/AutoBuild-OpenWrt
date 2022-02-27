@@ -84,14 +84,14 @@ jobs:
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku
         git clone https://github.com/AlexZhuo/luci-app-bandwidthd.git package/luci-app-bandwidth
         git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
-        # git clone https://github.com/tty228/luci-app-serverchan.git package/serverchan
+        git clone https://github.com/tty228/luci-app-serverchan.git package/serverchan
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adguardhome
         git clone https://github.com/Lienol/openwrt-OpenAppFilter.git package/OpenAppFilter
         git clone https://github.com/lejitao2013/luci-app-eqos.git package/eqos
         git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb  #git lua-maxminddb 依赖
         git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
         # git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
-    - name: Configuration Customization - Build_x86_64
+    - name: Configuration Customization - Build_N1
       env:
         CONFIG_FILE: 'N1.config'
       run: |
