@@ -69,8 +69,8 @@ jobs:
         
     - name: Delete Files
       working-directory: ./openwrt
-        run: |
-          sudo rm -rf openwrt/bin
+      run: | 
+        sudo rm -rf openwrt/bin
         
     - name: Update & Install feeds
       working-directory: ./openwrt
